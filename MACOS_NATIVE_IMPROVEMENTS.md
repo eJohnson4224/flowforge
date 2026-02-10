@@ -207,20 +207,20 @@ All macOS-specific features are wrapped in platform checks:
 
 ## 📁 Files Modified
 
-1. **`flowforge/flowforge/flowforgeApp.swift`**
+1. **`BLOWBORG/flowforge/flowforgeApp.swift`**
    - Added menu bar commands
    - Added Settings window
    - Added keyboard shortcuts
    - Added notification handlers
 
-2. **`flowforge/flowforge/ContentView.swift`**
+2. **`BLOWBORG/flowforge/ContentView.swift`**
    - Added context menus to all cards
    - Added tooltips to all buttons
    - Added Finder integration
    - Added rescan button
    - Added notification receivers
 
-3. **`flowforge/flowforge/Views/SettingsView.swift`**
+3. **`BLOWBORG/flowforge/Views/SettingsView.swift`**
    - Removed close button on macOS
    - Platform-specific header
 

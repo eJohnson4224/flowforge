@@ -2,8 +2,8 @@
 set +e
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-CLI_PATH="$ROOT_DIR/flowforge/flowforge/elektroid-cli"
-DEST_DIR="$ROOT_DIR/flowforge/flowforge"
+CLI_PATH="$ROOT_DIR/BLOWBORG/flowforge/elektroid-cli"
+DEST_DIR="$ROOT_DIR/BLOWBORG/flowforge"
 
 if [[ ! -f "$CLI_PATH" ]]; then
   echo "Missing elektroid-cli at $CLI_PATH" >&2

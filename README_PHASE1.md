@@ -16,7 +16,7 @@ Moving files between panels = Moving actual files between folders.
 ## 📁 Project Structure
 
 ```
-flowforge/
+BLOWBORG/
 ├── flowforge/
 │   ├── flowforgeApp.swift
 │   ├── ContentView.swift          ← Refactored for real files
@@ -28,6 +28,7 @@ flowforge/
 │   ├── Views/
 │   │   └── SettingsView.swift     ← NEW: Folder configuration UI
 │   └── Assets.xcassets/
+├── flowforge.xcodeproj/
 ├── misc/COMPLETED_ROADMAP/
 │   ├── PHASE1_GUIDE.md            ← User guide (archived)
 │   └── PHASE1_IMPLEMENTATION.md   ← Technical details (archived)
@@ -44,12 +45,12 @@ flowforge/
 ```bash
 # Open project
 cd /Users/elij/Desktop/folders/Programming/FlowForge
-open flowforge.xcodeproj
+open BLOWBORG/flowforge.xcodeproj
 
 # In Xcode, drag these files into the project:
-# - flowforge/flowforge/Models/AppState.swift → Models group
-# - flowforge/flowforge/Services/FolderManager.swift → Services group
-# - flowforge/flowforge/Views/SettingsView.swift → Views group
+# - BLOWBORG/flowforge/Models/AppState.swift → Models group
+# - BLOWBORG/flowforge/Services/FolderManager.swift → Services group
+# - BLOWBORG/flowforge/Views/SettingsView.swift → Views group
 ```
 
 ### 2. Build & Run
@@ -243,4 +244,3 @@ Like a well-mixed track, each element has its place. The system creates the **sp
 **Built with SwiftUI, macOS 14.0+, Xcode 15+**
 
 **Happy creating! 🎵**
-

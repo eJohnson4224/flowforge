@@ -269,7 +269,7 @@ See full implementation code in the sections below.
 
 ### **Step 1: Create ElektroidCLI Service**
 
-Create `flowforge/Services/ElektroidCLI.swift`:
+Create `BLOWBORG/flowforge/Services/ElektroidCLI.swift`:
 
 ```swift
 import Foundation
@@ -539,5 +539,4 @@ private func showTransferFailedAlert(error: Error) {
 5. Add progress indicators and polish UI
 
 **Elektroid CLI is the recommended approach** - it's free, open-source, and easy to integrate! 🚀
-
 

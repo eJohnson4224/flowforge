@@ -302,7 +302,7 @@ struct PreviewSnapshot: Identifiable, Codable {
 ## 📁 File Structure Changes
 
 ```
-flowforge/
+BLOWBORG/
   flowforge/
     Models/
       AppState.swift (existing)
@@ -334,4 +334,3 @@ flowforge/
 ---
 
 **Next Step:** Should I start implementing the data models and MetadataManager?
-

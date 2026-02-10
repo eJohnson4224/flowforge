@@ -31,7 +31,7 @@
 
 After fix:
 ```bash
-swiftc -parse flowforge/flowforge/ContentView.swift
+swiftc -parse BLOWBORG/flowforge/ContentView.swift
 # No errors!
 ```
 

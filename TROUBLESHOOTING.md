@@ -9,9 +9,9 @@ All Swift files parse correctly:
 - ✅ `ContentView.swift` - No syntax errors
 
 Files are in correct locations:
-- ✅ `flowforge/flowforge/Models/AppState.swift`
-- ✅ `flowforge/flowforge/Services/FolderManager.swift`
-- ✅ `flowforge/flowforge/Views/SettingsView.swift`
+- ✅ `BLOWBORG/flowforge/Models/AppState.swift`
+- ✅ `BLOWBORG/flowforge/Services/FolderManager.swift`
+- ✅ `BLOWBORG/flowforge/Views/SettingsView.swift`
 
 ## 🔍 Common Build Issues & Solutions
 
@@ -24,7 +24,7 @@ Files are in correct locations:
 3. Under "Target Membership", ensure `flowforge` is checked
 4. Repeat for `FolderManager.swift` and `SettingsView.swift`
 
-**Note:** Your project uses `PBXFileSystemSynchronizedRootGroup` which should auto-include all files in the `flowforge/flowforge/` directory. If files aren't showing up, try:
+**Note:** Your project uses `PBXFileSystemSynchronizedRootGroup` which should auto-include all files in the `BLOWBORG/flowforge/` directory. If files aren't showing up, try:
 - Close Xcode
 - Delete `~/Library/Developer/Xcode/DerivedData/flowforge-*`
 - Reopen Xcode
@@ -120,24 +120,24 @@ Same as Issue 4 - verify file is in target and rebuild
 ### Step 1: Verify Project Structure
 ```bash
 cd /Users/elij/Desktop/folders/Programming/FlowForge
-find flowforge/flowforge -name "*.swift" -type f
+find BLOWBORG/flowforge -name "*.swift" -type f
 ```
 
 Should show:
 ```
-flowforge/flowforge/ContentView.swift
-flowforge/flowforge/Item.swift
-flowforge/flowforge/flowforgeApp.swift
-flowforge/flowforge/Models/AppState.swift
-flowforge/flowforge/Services/FolderManager.swift
-flowforge/flowforge/Views/SettingsView.swift
+BLOWBORG/flowforge/ContentView.swift
+BLOWBORG/flowforge/Item.swift
+BLOWBORG/flowforge/flowforgeApp.swift
+BLOWBORG/flowforge/Models/AppState.swift
+BLOWBORG/flowforge/Services/FolderManager.swift
+BLOWBORG/flowforge/Views/SettingsView.swift
 ```
 
 ### Step 2: Check File Permissions
 ```bash
-ls -la flowforge/flowforge/Models/
-ls -la flowforge/flowforge/Services/
-ls -la flowforge/flowforge/Views/
+ls -la BLOWBORG/flowforge/Models/
+ls -la BLOWBORG/flowforge/Services/
+ls -la BLOWBORG/flowforge/Views/
 ```
 
 All files should be readable (`-rw-r--r--`)
@@ -203,4 +203,3 @@ Before asking for help, verify:
 ---
 
 **Most likely cause:** Xcode cache issue. Try cleaning and rebuilding first!
-

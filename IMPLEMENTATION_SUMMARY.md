@@ -3,7 +3,7 @@
 ## ✅ Completed Tasks
 
 ### 1. Refactored UI to Single-State Full-Screen View
-**File:** `flowforge/flowforge/ContentView.swift`
+**File:** `BLOWBORG/flowforge/ContentView.swift`
 
 **Changes:**
 - Removed 3-panel HStack layout
@@ -27,7 +27,7 @@ private var currentStateView: some View {
 ---
 
 ### 2. Added State Navigation Controls
-**File:** `flowforge/flowforge/ContentView.swift`
+**File:** `BLOWBORG/flowforge/ContentView.swift`
 
 **New Component:** `StateTab`
 - Displays state icon, name, and file count
@@ -61,7 +61,7 @@ ForEach(WorkflowState.allCases, id: \.self) { state in
 ---
 
 ### 3. Updated AppState for State Management
-**File:** `flowforge/flowforge/Models/AppState.swift`
+**File:** `BLOWBORG/flowforge/Models/AppState.swift`
 
 **New Properties:**
 - `@Published var currentState: WorkflowState = .sketches`
@@ -84,7 +84,7 @@ ForEach(WorkflowState.allCases, id: \.self) { state in
 ---
 
 ### 4. Added Default State Preference to Settings
-**File:** `flowforge/flowforge/Views/SettingsView.swift`
+**File:** `BLOWBORG/flowforge/Views/SettingsView.swift`
 
 **New Section:** "Default State on Launch"
 - Segmented picker to choose default state
@@ -110,17 +110,17 @@ Picker("Default State", selection: $appState.currentState) {
 
 ## 📁 Files Modified
 
-1. **flowforge/flowforge/ContentView.swift**
+1. **BLOWBORG/flowforge/ContentView.swift**
    - Refactored main layout
    - Added StateTab component
    - Added state switching logic
 
-2. **flowforge/flowforge/Models/AppState.swift**
+2. **BLOWBORG/flowforge/Models/AppState.swift**
    - Added currentState property
    - Added state persistence
    - Updated load/save methods
 
-3. **flowforge/flowforge/Views/SettingsView.swift**
+3. **BLOWBORG/flowforge/Views/SettingsView.swift**
    - Added default state picker
    - Updated frame height
    - Added new settings section

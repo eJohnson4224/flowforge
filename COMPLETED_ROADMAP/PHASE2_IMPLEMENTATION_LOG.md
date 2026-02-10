@@ -9,7 +9,7 @@ Building state-specific metadata and preview systems for Sketches, Active, and A
 ## ✅ Completed: Foundation & Data Models
 
 ### 1. Created ProjectMetadata.swift
-**Location:** `flowforge/flowforge/Models/ProjectMetadata.swift`
+**Location:** `BLOWBORG/flowforge/Models/ProjectMetadata.swift`
 
 **Models Created:**
 - `ProjectMetadata` - Rich metadata for projects/files
@@ -39,7 +39,7 @@ Building state-specific metadata and preview systems for Sketches, Active, and A
 ---
 
 ### 2. Created MetadataManager.swift
-**Location:** `flowforge/flowforge/Services/MetadataManager.swift`
+**Location:** `BLOWBORG/flowforge/Services/MetadataManager.swift`
 
 **Storage Strategy:**
 ```
@@ -71,7 +71,7 @@ Building state-specific metadata and preview systems for Sketches, Active, and A
 ---
 
 ### 3. Updated AudioFile Model
-**Location:** `flowforge/flowforge/Models/AppState.swift`
+**Location:** `BLOWBORG/flowforge/Models/AppState.swift`
 
 **Changes:**
 - Added `metadataID: UUID?` property
@@ -87,7 +87,7 @@ Building state-specific metadata and preview systems for Sketches, Active, and A
 ---
 
 ### 4. Enhanced AppState
-**Location:** `flowforge/flowforge/Models/AppState.swift`
+**Location:** `BLOWBORG/flowforge/Models/AppState.swift`
 
 **New Properties:**
 - `metadataCache: [UUID: ProjectMetadata]` - In-memory cache
@@ -191,13 +191,13 @@ JSON Files (storage)
 ## 📁 Files Created/Modified
 
 ### Created:
-1. `flowforge/flowforge/Models/ProjectMetadata.swift`
-2. `flowforge/flowforge/Services/MetadataManager.swift`
+1. `BLOWBORG/flowforge/Models/ProjectMetadata.swift`
+2. `BLOWBORG/flowforge/Services/MetadataManager.swift`
 3. `PHASE2_METADATA_ARCHITECTURE.md`
 4. `PHASE2_IMPLEMENTATION_LOG.md`
 
 ### Modified:
-1. `flowforge/flowforge/Models/AppState.swift`
+1. `BLOWBORG/flowforge/Models/AppState.swift`
    - Added `metadataID` to AudioFile
    - Added metadata cache and management methods
    - Updated initialization and scanning

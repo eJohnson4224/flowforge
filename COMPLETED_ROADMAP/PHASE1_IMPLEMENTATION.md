@@ -173,10 +173,10 @@ We implemented **Option B** - a settings menu approach where folder configuratio
 
 ## 📝 Files Modified
 
-- `flowforge/flowforge/ContentView.swift` - Complete refactor for real files
-- `flowforge/flowforge/Models/AppState.swift` - NEW
-- `flowforge/flowforge/Services/FolderManager.swift` - NEW
-- `flowforge/flowforge/Views/SettingsView.swift` - NEW
+- `BLOWBORG/flowforge/ContentView.swift` - Complete refactor for real files
+- `BLOWBORG/flowforge/Models/AppState.swift` - NEW
+- `BLOWBORG/flowforge/Services/FolderManager.swift` - NEW
+- `BLOWBORG/flowforge/Views/SettingsView.swift` - NEW
 
 ---
 

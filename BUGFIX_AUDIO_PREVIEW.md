@@ -243,15 +243,15 @@ for case let fileURL as URL in enumerator {
 
 ## 📁 Files Modified
 
-1. **`flowforge/flowforge/Models/ProjectMetadata.swift`**
+1. **`BLOWBORG/flowforge/Models/ProjectMetadata.swift`**
    - Moved `import AVFoundation` to file scope
    - Removed conditional import
 
-2. **`flowforge/flowforge/Models/AppState.swift`**
+2. **`BLOWBORG/flowforge/Models/AppState.swift`**
    - Added `@MainActor` to async Tasks
    - Ensured thread-safe UI updates
 
-3. **`flowforge/flowforge/Services/MetadataManager.swift`**
+3. **`BLOWBORG/flowforge/Services/MetadataManager.swift`**
    - Removed `@MainActor` from class
    - Added directory existence checks
    - Added error handling for corrupted files

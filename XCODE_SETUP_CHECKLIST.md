@@ -5,11 +5,11 @@
 ### 1. Open Xcode Project
 ```bash
 cd /Users/elij/Desktop/folders/Programming/FlowForge
-open flowforge.xcodeproj
+open BLOWBORG/flowforge.xcodeproj
 ```
 
 ### 2. Create Folder Structure in Xcode
-Right-click on `flowforge` folder in Project Navigator:
+Right-click on the `flowforge` folder in Project Navigator (under `BLOWBORG/flowforge`):
 
 **Create these groups (folders):**
 - `Models` (if not exists)
@@ -21,13 +21,13 @@ Right-click on `flowforge` folder in Project Navigator:
 **Drag and drop these files into Xcode:**
 
 #### Into `Models/` group:
-- `flowforge/flowforge/Models/AppState.swift`
+- `BLOWBORG/flowforge/Models/AppState.swift`
 
 #### Into `Services/` group:
-- `flowforge/flowforge/Services/FolderManager.swift`
+- `BLOWBORG/flowforge/Services/FolderManager.swift`
 
 #### Into `Views/` group:
-- `flowforge/flowforge/Views/SettingsView.swift`
+- `BLOWBORG/flowforge/Views/SettingsView.swift`
 
 **Important:** When dragging files:
 - ✅ Check "Copy items if needed"
@@ -37,7 +37,7 @@ Right-click on `flowforge` folder in Project Navigator:
 ### 4. Verify File References
 In Project Navigator, you should see:
 ```
-flowforge/
+BLOWBORG/flowforge/
 ├── flowforgeApp.swift
 ├── ContentView.swift
 ├── Item.swift
@@ -156,9 +156,9 @@ flowforge/
 ### Issue: Files not showing in Xcode
 **Fix:** Make sure files are in the correct physical location:
 ```bash
-ls -la flowforge/flowforge/Models/
-ls -la flowforge/flowforge/Services/
-ls -la flowforge/flowforge/Views/
+ls -la BLOWBORG/flowforge/Models/
+ls -la BLOWBORG/flowforge/Services/
+ls -la BLOWBORG/flowforge/Views/
 ```
 
 ### Issue: Build errors about missing files
@@ -215,4 +215,3 @@ Once Phase 1 is working:
 ---
 
 **Ready to build! 🚀**
-

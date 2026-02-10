@@ -5,12 +5,12 @@
 All Swift files exist and parse correctly:
 
 ```bash
-✅ flowforge/flowforge/flowforgeApp.swift
-✅ flowforge/flowforge/ContentView.swift
-✅ flowforge/flowforge/Item.swift
-✅ flowforge/flowforge/Models/AppState.swift
-✅ flowforge/flowforge/Services/FolderManager.swift
-✅ flowforge/flowforge/Views/SettingsView.swift
+✅ BLOWBORG/flowforge/flowforgeApp.swift
+✅ BLOWBORG/flowforge/ContentView.swift
+✅ BLOWBORG/flowforge/Item.swift
+✅ BLOWBORG/flowforge/Models/AppState.swift
+✅ BLOWBORG/flowforge/Services/FolderManager.swift
+✅ BLOWBORG/flowforge/Views/SettingsView.swift
 ```
 
 ## ✅ Syntax Check
@@ -24,7 +24,7 @@ All files have valid Swift syntax (verified with `swiftc -parse`):
 ## 📁 Project Structure
 
 ```
-flowforge/
+BLOWBORG/
 ├── flowforge.xcodeproj/
 │   └── project.pbxproj (uses PBXFileSystemSynchronizedRootGroup)
 └── flowforge/
@@ -94,4 +94,3 @@ Try these in order:
 **Status: Ready to build! All files are valid and in place.**
 
 Please try building in Xcode and let me know what happens!
-

@@ -147,14 +147,14 @@ func saveFolderPaths() {
 ## 📊 Changes Summary
 
 ### Files Modified
-1. **flowforge/flowforge/Models/AppState.swift**
+1. **BLOWBORG/flowforge/Models/AppState.swift**
    - Added `defaultState` property with didSet
    - Removed didSet from `currentState`
    - Updated `loadFolderPaths()` to load default state
    - Updated `saveFolderPaths()` to remove manual state saving
    - Changed UserDefaults key from `currentStateKey` to `defaultStateKey`
 
-2. **flowforge/flowforge/Views/SettingsView.swift**
+2. **BLOWBORG/flowforge/Views/SettingsView.swift**
    - Replaced segmented picker with custom button selector
    - Changed binding from `$appState.currentState` to `$appState.defaultState`
    - Added color-coded backgrounds and borders

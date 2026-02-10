@@ -50,17 +50,17 @@ flowchart LR
 
 ### Key code entry points (as of this codebase)
 
-- UI state routing: `flowforge/flowforge/ContentView.swift`
-- Global state + persistence: `flowforge/flowforge/Models/AppState.swift`
-- Folder selection/scanning/moves: `flowforge/flowforge/Services/FolderManager.swift`
+- UI state routing: `BLOWBORG/flowforge/ContentView.swift`
+- Global state + persistence: `BLOWBORG/flowforge/Models/AppState.swift`
+- Folder selection/scanning/moves: `BLOWBORG/flowforge/Services/FolderManager.swift`
 - Sketches samples scan + Ableton linking:
-  - `flowforge/flowforge/Services/SampleScanner.swift`
-  - `flowforge/flowforge/Services/AbletonParser.swift`
-- Audio preview engine: `flowforge/flowforge/Services/AudioPreviewManager.swift`
+  - `BLOWBORG/flowforge/Services/SampleScanner.swift`
+  - `BLOWBORG/flowforge/Services/AbletonParser.swift`
+- Audio preview engine: `BLOWBORG/flowforge/Services/AudioPreviewManager.swift`
 - Sample UX:
-  - `flowforge/flowforge/Views/SamplesListView.swift`
-  - `flowforge/flowforge/Views/SampleDetailView.swift`
-  - `flowforge/flowforge/Views/RandomSampleView.swift`
+  - `BLOWBORG/flowforge/Views/SamplesListView.swift`
+  - `BLOWBORG/flowforge/Views/SampleDetailView.swift`
+  - `BLOWBORG/flowforge/Views/RandomSampleView.swift`
 
 ### Metadata + preview persistence (implemented foundation)
 
