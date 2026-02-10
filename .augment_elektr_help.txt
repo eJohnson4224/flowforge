@@ -1,0 +1,13 @@
+### elektroid-cli --help
+elektroid-cli: illegal option -- -
+elektroid-cli: illegal option -- h
+elektroid-cli: illegal option -- e
+elektroid-cli: illegal option -- l
+elektroid-cli: illegal option -- p
+elektroid 3.3
+Usage: elektroid-cli [options] command
+
+### elektroid-cli -h
+elektroid-cli: illegal option -- h
+elektroid 3.3
+Usage: elektroid-cli [options] command

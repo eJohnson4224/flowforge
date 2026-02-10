@@ -1,0 +1,11 @@
+--- ls-tree HEAD (stdout below)
+ls-tree exit=0
+--- ls-tree TREE_HASH
+ls-tree-tree exit=0
+--- cat-file -p TREE_HASH
+100644 blob 4ee740fd13c4d304cddc2abe56655790c3f9890c	.gitignore
+040000 tree 997f0118f7bee2d5b3ee364628860b6ba815db9e	ESMCCFR-LEDUC
+040000 tree 3971013cdb02cfce7bb95b060d53603926bae813	Kuhn
+100644 blob 3a52b74e221efbc6e1422625a0e1f538925544bd	README.md
+040000 tree c739215b9d1c49665070b2ad1726f51195c1e862	acpc-python-client
+cat-file exit=0

@@ -1,0 +1,10 @@
+--- find Projects/Active/FlowForge*
+--- find any file path containing /Projects/Active/
+--- top-level .obsidian exists?
+total 24
+drwxr-xr-x@  6 elij  staff   192 Jan 23 17:04 .
+drwxr-xr-x@ 51 elij  staff  1632 Jan 26 08:16 ..
+-rw-r--r--@  1 elij  staff     2 Jan 23 16:42 app.json
+-rw-r--r--@  1 elij  staff     2 Jan 23 16:42 appearance.json
+-rw-r--r--@  1 elij  staff   696 Jan 23 16:42 core-plugins.json
+-rw-r--r--@  1 elij  staff  5843 Jan 23 17:04 workspace.json

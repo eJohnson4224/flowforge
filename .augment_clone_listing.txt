@@ -1,0 +1,4 @@
+total 0
+drwx------      3 elij  staff       96 Jan 24 18:47 .
+drwxr-xr-x@     9 elij  staff      288 Jan 24 18:47 ..
+drwx------  65535 elij  staff  2097120 Jan 24 18:47 .git

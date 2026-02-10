@@ -1,0 +1,13 @@
+--- what did we actually clone?
+origin	https://github.com/michalp21/coms4995-finalproj.git (fetch)
+origin	https://github.com/michalp21/coms4995-finalproj.git (push)
+--- bare/worktree flags
+false
+true
+--- sparse checkout config
+--- list top-level tree
+--- check lorenjohnson remote reachable
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/lorenjohnson/Hypnograph.git/'
+--- global url rewrites (insteadOf)
+--- system url rewrites (insteadOf)

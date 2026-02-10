@@ -1,0 +1,12 @@
+### elektroid-cli df 1:/
+ERROR:audio_rtaudio.c:256:audio_init_int: Error occurred while opening the recording RtAudio stream: RtApiCore::probeDeviceOpen: the device (134) does not support the requested channel count
+Storage                         Size            Used       Available       Use%
++Drive                      959.5MiB        625.8MiB        333.7MiB     65.22%
+RAM                            64MiB        806.6KiB        63.21MiB      1.23%
+exit=0
+
+### elektroid-cli df "Elektron Digitakt :: Elektron Digitakt":/
+ERROR:audio_rtaudio.c:256:audio_init_int: Error occurred while opening the recording RtAudio stream: RtApiCore::probeDeviceOpen: the device (134) does not support the requested channel count
+ERROR:elektroid-cli.c:136:cli_connect: Device not provided properly in 'Elektron Digitakt :: Elektron Digitakt:/'
+ERROR:elektroid-cli.c:1195:main: Error: Operation not supported by device
+exit=1

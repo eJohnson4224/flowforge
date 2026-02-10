@@ -1,0 +1,15 @@
+ERROR:audio_rtaudio.c:256:audio_init_int: Error occurred while opening the recording RtAudio stream: RtApiCore::probeDeviceOpen: the device (134) does not support the requested channel count
+0: id: SYSTEM_ID; name: Elis-MacBook-Air.local
+1: id: Elektron Digitakt :: Elektron Digitakt; name: Elektron Digitakt :: Elektron Digitakt
+2: id: Elektron Digitakt :: Impact LX49+ MIDI1; name: Elektron Digitakt :: Impact LX49+ MIDI1
+3: id: Elektron Digitakt :: M4; name: Elektron Digitakt :: M4
+4: id: Impact LX49+ MIDI1 :: Elektron Digitakt; name: Impact LX49+ MIDI1 :: Elektron Digitakt
+5: id: Impact LX49+ MIDI1 :: Impact LX49+ MIDI1; name: Impact LX49+ MIDI1 :: Impact LX49+ MIDI1
+6: id: Impact LX49+ MIDI1 :: M4; name: Impact LX49+ MIDI1 :: M4
+7: id: Impact LX49+ MIDI2 :: Elektron Digitakt; name: Impact LX49+ MIDI2 :: Elektron Digitakt
+8: id: Impact LX49+ MIDI2 :: Impact LX49+ MIDI1; name: Impact LX49+ MIDI2 :: Impact LX49+ MIDI1
+9: id: Impact LX49+ MIDI2 :: M4; name: Impact LX49+ MIDI2 :: M4
+10: id: M4 :: Elektron Digitakt; name: M4 :: Elektron Digitakt
+11: id: M4 :: Impact LX49+ MIDI1; name: M4 :: Impact LX49+ MIDI1
+12: id: M4 :: M4; name: M4 :: M4
+13: id: volca-sample; name: KORG Volca Sample

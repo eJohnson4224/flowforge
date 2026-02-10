@@ -1,0 +1,36 @@
+TARGET=/Users/elij/Desktop/folders/Programming/getProj/Hypnograph
+--- filesystem
+total 0
+drwx------  3 elij  staff   96 Jan 24 18:47 .
+drwxr-xr-x@ 9 elij  staff  288 Jan 24 18:47 ..
+drwx------  2 elij  staff   64 Jan 24 18:47 .git
+--- git remote -v
+origin	https://github.com/michalp21/coms4995-finalproj.git (fetch)
+origin	https://github.com/michalp21/coms4995-finalproj.git (push)
+--- git status
+## master...origin/master
+--- HEAD
+947f27ed895e6207f26ad7b7fa1483e93eccee3d
+--- tree hash
+d5eabf7aa0e1e4f8fb85375dc47a29bb4868daad
+--- tree entries (first 50)
+--- tracked files count
+       0
+--- branches
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+--- show-ref (first 50)
+947f27ed895e6207f26ad7b7fa1483e93eccee3d refs/heads/master
+947f27ed895e6207f26ad7b7fa1483e93eccee3d refs/remotes/origin/HEAD
+947f27ed895e6207f26ad7b7fa1483e93eccee3d refs/remotes/origin/master
+--- last 5 commits
+947f27e (HEAD -> master, origin/master, origin/HEAD) Printing tweak
+794ec81 Fix assert in Leduc rules
+93afc0e Fix Leduc evaluation
+b7fc161 Update compatibility of Contest.py and bots
+10d72bd Various fixes
+--- show last commit name-status
+947f27e Printing tweak
+M	ESMCCFR-LEDUC/StrategySaver.py
+M	ESMCCFR-LEDUC/Utilities.py

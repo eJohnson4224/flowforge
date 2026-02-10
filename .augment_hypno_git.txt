@@ -1,0 +1,7 @@
+pwd: /Users/elij/Desktop/folders/Programming/FlowForge
+target: /Users/elij/Desktop/folders/Programming/getProj/Hypnograph
+--- git status
+## master...origin/master
+--- head
+947f27ed895e6207f26ad7b7fa1483e93eccee3d
+--- top tree

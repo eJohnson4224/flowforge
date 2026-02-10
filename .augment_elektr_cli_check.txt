@@ -1,0 +1,44 @@
+### date
+Sat Jan 24 20:42:14 PST 2026
+
+### command -v elektroid-cli
+/usr/local/bin/elektroid-cli
+### command -v elektroid
+/usr/local/bin/elektroid
+
+### which elektroid-cli
+/usr/local/bin/elektroid-cli
+### which elektroid
+/usr/local/bin/elektroid
+
+### common paths
+/opt/homebrew/bin/elektroid-cli:
+ls: /opt/homebrew/bin/elektroid-cli: No such file or directory
+
+/opt/homebrew/bin/elektroid:
+ls: /opt/homebrew/bin/elektroid: No such file or directory
+
+/usr/local/bin/elektroid-cli:
+-rwxr-xr-x@ 1 root  wheel  334032 Jan 23 13:12 /usr/local/bin/elektroid-cli
+
+/usr/local/bin/elektroid:
+-rwxr-xr-x@ 1 root  wheel  515224 Jan 23 13:12 /usr/local/bin/elektroid
+
+/usr/bin/elektroid-cli:
+ls: /usr/bin/elektroid-cli: No such file or directory
+
+/usr/bin/elektroid:
+ls: /usr/bin/elektroid: No such file or directory
+
+/Users/elij/elektroid/src/elektroid-cli:
+-rwxr-xr-x@ 1 elij  staff  334032 Jan 23 13:12 /Users/elij/elektroid/src/elektroid-cli
+
+### list elektroid-ish binaries
+/opt/homebrew/bin:
+
+/usr/local/bin:
+elektroid
+elektroid-cli
+
+/usr/bin:
+

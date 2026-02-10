@@ -1,0 +1,8 @@
+--- which git
+/usr/bin/git
+--- type git
+git is /usr/bin/git
+--- git path
+/usr/bin/git
+--- git ls-tree help snippet
+   ls-tree                 List the contents of a tree object

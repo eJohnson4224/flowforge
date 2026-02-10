@@ -1,0 +1,10 @@
+--- ls-remote Hypnograph
+746a170bea30dfdf99a534867e65827190853ee4	HEAD
+exit=0
+--- ls-remote (all refs, first 5)
+746a170bea30dfdf99a534867e65827190853ee4	HEAD
+bb2ca68e1ef1d364322b92934a9a03c33fd9154e	refs/heads/feature/metal-playback-pipeline
+651e7b1201c2e5ad21a07429635af0a74751712f	refs/heads/feature/smart-framing-human-centering
+93290d51f17f0622b77f516d3ba872e277bc5959	refs/heads/feature/volume-leveling
+746a170bea30dfdf99a534867e65827190853ee4	refs/heads/main
+exit=0

@@ -1,0 +1,20 @@
+HEAD:
+947f27ed895e6207f26ad7b7fa1483e93eccee3d
+TREE:
+d5eabf7aa0e1e4f8fb85375dc47a29bb4868daad
+tree type:
+tree
+tree entries count:
+       0
+first 20 tree entries:
+raw show:
+commit 947f27ed895e6207f26ad7b7fa1483e93eccee3d
+tree d5eabf7aa0e1e4f8fb85375dc47a29bb4868daad
+parent 794ec81e14e402840dc839e18a3222b14f978e78
+author mp3242 <mp3242@columbia.edu> 1526440496 -0400
+committer mp3242 <mp3242@columbia.edu> 1526440496 -0400
+
+    Printing tweak
+
+M	ESMCCFR-LEDUC/StrategySaver.py
+M	ESMCCFR-LEDUC/Utilities.py
