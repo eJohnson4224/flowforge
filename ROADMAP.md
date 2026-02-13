@@ -156,6 +156,14 @@ Make Sketches the place you can live in every day:
 - Low-friction triage into Active
 - Solid Samples sub-workflow without crashes or confusing states
 
+### Baseline summary (before this hardening cycle)
+
+- Sketches Projects/Samples views are in place with scanning + preview
+- Sample metadata exists and is editable
+- Digitakt transfer is wired end-to-end (stage → trim → upload → verify) to `/samples/SKETCHS`
+- Elektroid CLI diagnostics + routing checks are available in Settings and Sample Detail
+- Preflight warnings exist for >30s duration and >64MB size
+
 ### Sketches functionality diagram
 
 ```mermaid
@@ -194,6 +202,20 @@ flowchart TB
 - Run `TEST_SWEEP.md` after significant changes that warrant a commit
 - Passing the sweep is required to exit Phase S and enter Phase R
 - Record the pass in `COMPLETED_ROADMAP/ARCHIVE.md`
+
+### Transfer edge-case test plan (commit gate detail)
+
+Run these in order after any significant transfer changes (mirrors `TEST_SWEEP.md`):
+
+1. Short sample (<10s): transfer and verify it appears in `/samples/SKETCHS`.
+2. Duplicate file: transfer same file again → prompt shows → choose Overwrite (skip upload, keep existing).
+3. Long sample (>30s): confirm warning → attempt transfer blocked with alert → trim to <=30s → transfer succeeds.
+4. Disconnected device: unplug Digitakt → transfer shows clean error and no crash.
+5. Oversized sample (>64MB): confirm warning → transfer should fail gracefully or be canceled.
+6. Wrong USB mode: set Digitakt to Overbridge → routing issue message appears.
+7. Folder creation: delete `/samples/SKETCHS` on device → transfer recreates folder and uploads.
+8. Filename edge case: transfer a file with spaces/uppercase → verify shows correct name.
+9. Reconnect flow: unplug/replug Digitakt → transfer works without app restart.
 
 ### Prioritized work items (Sketches)
 

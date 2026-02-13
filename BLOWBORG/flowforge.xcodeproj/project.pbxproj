@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E1BUNDLECLI00000001 /* flowforge/elektroid-cli in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEF1E2D3C4B5A69788 /* flowforge/elektroid-cli */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEGLIB000000001 /* flowforge/libglib-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBREF0001 /* flowforge/libglib-2.0.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEGLIBGIO0000001 /* flowforge/libgio-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBGIOREF1 /* flowforge/libgio-2.0.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEGLIBGOBJ00001 /* flowforge/libgobject-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBGOBJREF1 /* flowforge/libgobject-2.0.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEINTL000000001 /* flowforge/libintl.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEINTLREF0001 /* flowforge/libintl.8.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEJSONGLIB000001 /* flowforge/libjson-glib-1.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEJSONGLIBREF1 /* flowforge/libjson-glib-1.0.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLERTAUDIO00001 /* flowforge/librtaudio.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLERTAUDIOREF01 /* flowforge/librtaudio.7.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLERTMIDI00000001 /* flowforge/librtmidi.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLERTMIDIREF0001 /* flowforge/librtmidi.7.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLESAMPLERATE1 /* flowforge/libsamplerate.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLESAMPLERATEREF1 /* flowforge/libsamplerate.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLESNDFILE0001 /* flowforge/libsndfile.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLESNDFILEREF1 /* flowforge/libsndfile.1.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEZIP0000000001 /* flowforge/libzip.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEZIPREF000001 /* flowforge/libzip.5.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEFLAC000001 /* flowforge/libFLAC.14.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEFLACREF0001 /* flowforge/libFLAC.14.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEGMODULE0001 /* flowforge/libgmodule-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGMODULEREF1 /* flowforge/libgmodule-2.0.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEPCRE20001 /* flowforge/libpcre2-8.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEPCRE2REF01 /* flowforge/libpcre2-8.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEOGG000001 /* flowforge/libogg.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEOGGREF0001 /* flowforge/libogg.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEVORBIS0001 /* flowforge/libvorbis.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEVORBISREF1 /* flowforge/libvorbis.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEVORBISENC1 /* flowforge/libvorbisenc.2.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEVORBISENCREF1 /* flowforge/libvorbisenc.2.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEOPUS0001 /* flowforge/libopus.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEOPUSREF0001 /* flowforge/libopus.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEMPG123001 /* flowforge/libmpg123.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEMPG123REF1 /* flowforge/libmpg123.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEMP3LAME01 /* flowforge/libmp3lame.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEMP3LAMEREF1 /* flowforge/libmp3lame.0.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLELZMA0001 /* flowforge/liblzma.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLELZMAREF0001 /* flowforge/liblzma.5.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1BUNDLEZSTD0001 /* flowforge/libzstd.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEZSTDREF0001 /* flowforge/libzstd.1.dylib */; settings = { ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLECLI00000001 /* flowforge/elektroid-cli in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEF1E2D3C4B5A69788 /* flowforge/elektroid-cli */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEFLAC000001 /* flowforge/libFLAC.14.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEFLACREF0001 /* flowforge/libFLAC.14.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGLIB000000001 /* flowforge/libglib-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBREF0001 /* flowforge/libglib-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGLIBGIO0000001 /* flowforge/libgio-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBGIOREF1 /* flowforge/libgio-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGLIBGOBJ00001 /* flowforge/libgobject-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBGOBJREF1 /* flowforge/libgobject-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGMODULE0001 /* flowforge/libgmodule-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGMODULEREF1 /* flowforge/libgmodule-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEINTL000000001 /* flowforge/libintl.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEINTLREF0001 /* flowforge/libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEJSONGLIB000001 /* flowforge/libjson-glib-1.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEJSONGLIBREF1 /* flowforge/libjson-glib-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLELZMA0001 /* flowforge/liblzma.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLELZMAREF0001 /* flowforge/liblzma.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEMP3LAME01 /* flowforge/libmp3lame.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEMP3LAMEREF1 /* flowforge/libmp3lame.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEMPG123001 /* flowforge/libmpg123.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEMPG123REF1 /* flowforge/libmpg123.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEOGG000001 /* flowforge/libogg.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEOGGREF0001 /* flowforge/libogg.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEOPUS0001 /* flowforge/libopus.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEOPUSREF0001 /* flowforge/libopus.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEPCRE20001 /* flowforge/libpcre2-8.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEPCRE2REF01 /* flowforge/libpcre2-8.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLERTAUDIO00001 /* flowforge/librtaudio.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLERTAUDIOREF01 /* flowforge/librtaudio.7.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLERTMIDI00000001 /* flowforge/librtmidi.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLERTMIDIREF0001 /* flowforge/librtmidi.7.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLESAMPLERATE1 /* flowforge/libsamplerate.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLESAMPLERATEREF1 /* flowforge/libsamplerate.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLESNDFILE0001 /* flowforge/libsndfile.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLESNDFILEREF1 /* flowforge/libsndfile.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEVORBIS0001 /* flowforge/libvorbis.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEVORBISREF1 /* flowforge/libvorbis.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEVORBISENC1 /* flowforge/libvorbisenc.2.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEVORBISENCREF1 /* flowforge/libvorbisenc.2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEZIP0000000001 /* flowforge/libzip.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEZIPREF000001 /* flowforge/libzip.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEZSTD0001 /* flowforge/libzstd.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEZSTDREF0001 /* flowforge/libzstd.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,26 +68,26 @@
 /* Begin PBXFileReference section */
 		C13DB4A02F0B08BD00CC45A7 /* flowforge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowforge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BUNDLEF1E2D3C4B5A69788 /* flowforge/elektroid-cli */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "flowforge/elektroid-cli"; sourceTree = "<group>"; };
+		E1BUNDLEFLACREF0001 /* flowforge/libFLAC.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libFLAC.14.dylib; sourceTree = "<group>"; };
 		E1BUNDLEGLIBGIOREF1 /* flowforge/libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libgio-2.0.0.dylib"; sourceTree = "<group>"; };
 		E1BUNDLEGLIBGOBJREF1 /* flowforge/libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
 		E1BUNDLEGLIBREF0001 /* flowforge/libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLEGMODULEREF1 /* flowforge/libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libgmodule-2.0.0.dylib"; sourceTree = "<group>"; };
 		E1BUNDLEINTLREF0001 /* flowforge/libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libintl.8.dylib; sourceTree = "<group>"; };
 		E1BUNDLEJSONGLIBREF1 /* flowforge/libjson-glib-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libjson-glib-1.0.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLELZMAREF0001 /* flowforge/liblzma.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/liblzma.5.dylib; sourceTree = "<group>"; };
+		E1BUNDLEMP3LAMEREF1 /* flowforge/libmp3lame.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libmp3lame.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEMPG123REF1 /* flowforge/libmpg123.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libmpg123.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEOGGREF0001 /* flowforge/libogg.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libogg.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEOPUSREF0001 /* flowforge/libopus.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libopus.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEPCRE2REF01 /* flowforge/libpcre2-8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libpcre2-8.0.dylib"; sourceTree = "<group>"; };
 		E1BUNDLERTAUDIOREF01 /* flowforge/librtaudio.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/librtaudio.7.dylib; sourceTree = "<group>"; };
 		E1BUNDLERTMIDIREF0001 /* flowforge/librtmidi.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/librtmidi.7.dylib; sourceTree = "<group>"; };
 		E1BUNDLESAMPLERATEREF1 /* flowforge/libsamplerate.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libsamplerate.0.dylib; sourceTree = "<group>"; };
 		E1BUNDLESNDFILEREF1 /* flowforge/libsndfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libsndfile.1.dylib; sourceTree = "<group>"; };
-		E1BUNDLEZIPREF000001 /* flowforge/libzip.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libzip.5.dylib; sourceTree = "<group>"; };
-		E1BUNDLEFLACREF0001 /* flowforge/libFLAC.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libFLAC.14.dylib; sourceTree = "<group>"; };
-		E1BUNDLEGMODULEREF1 /* flowforge/libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libgmodule-2.0.0.dylib"; sourceTree = "<group>"; };
-		E1BUNDLEPCRE2REF01 /* flowforge/libpcre2-8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "flowforge/libpcre2-8.0.dylib"; sourceTree = "<group>"; };
-		E1BUNDLEOGGREF0001 /* flowforge/libogg.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libogg.0.dylib; sourceTree = "<group>"; };
-		E1BUNDLEVORBISREF1 /* flowforge/libvorbis.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libvorbis.0.dylib; sourceTree = "<group>"; };
 		E1BUNDLEVORBISENCREF1 /* flowforge/libvorbisenc.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libvorbisenc.2.dylib; sourceTree = "<group>"; };
-		E1BUNDLEOPUSREF0001 /* flowforge/libopus.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libopus.0.dylib; sourceTree = "<group>"; };
-		E1BUNDLEMPG123REF1 /* flowforge/libmpg123.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libmpg123.0.dylib; sourceTree = "<group>"; };
-		E1BUNDLEMP3LAMEREF1 /* flowforge/libmp3lame.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libmp3lame.0.dylib; sourceTree = "<group>"; };
-		E1BUNDLELZMAREF0001 /* flowforge/liblzma.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/liblzma.5.dylib; sourceTree = "<group>"; };
+		E1BUNDLEVORBISREF1 /* flowforge/libvorbis.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libvorbis.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEZIPREF000001 /* flowforge/libzip.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libzip.5.dylib; sourceTree = "<group>"; };
 		E1BUNDLEZSTDREF0001 /* flowforge/libzstd.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = flowforge/libzstd.1.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +141,17 @@
 				E1BUNDLERTAUDIOREF01 /* flowforge/librtaudio.7.dylib */,
 				E1BUNDLESNDFILEREF1 /* flowforge/libsndfile.1.dylib */,
 				E1BUNDLESAMPLERATEREF1 /* flowforge/libsamplerate.0.dylib */,
+				E1BUNDLEFLACREF0001 /* flowforge/libFLAC.14.dylib */,
+				E1BUNDLEGMODULEREF1 /* flowforge/libgmodule-2.0.0.dylib */,
+				E1BUNDLEPCRE2REF01 /* flowforge/libpcre2-8.0.dylib */,
+				E1BUNDLEOGGREF0001 /* flowforge/libogg.0.dylib */,
+				E1BUNDLEVORBISREF1 /* flowforge/libvorbis.0.dylib */,
+				E1BUNDLEVORBISENCREF1 /* flowforge/libvorbisenc.2.dylib */,
+				E1BUNDLEOPUSREF0001 /* flowforge/libopus.0.dylib */,
+				E1BUNDLEMPG123REF1 /* flowforge/libmpg123.0.dylib */,
+				E1BUNDLEMP3LAMEREF1 /* flowforge/libmp3lame.0.dylib */,
+				E1BUNDLELZMAREF0001 /* flowforge/liblzma.5.dylib */,
+				E1BUNDLEZSTDREF0001 /* flowforge/libzstd.1.dylib */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";

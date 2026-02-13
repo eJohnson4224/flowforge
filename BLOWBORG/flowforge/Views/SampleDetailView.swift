@@ -79,7 +79,9 @@ struct SampleDetailView: View {
     }
 
     private var effectiveTrimRange: SampleTrimExporter.TrimRange? {
-        SampleTrimExporter.range(from: metadata, duration: sample.duration)
+        guard let duration = sample.duration else { return nil }
+        let resolvedEnd = trimEndSeconds <= 0 ? duration : trimEndSeconds
+        return SampleTrimExporter.clampedRange(start: trimStartSeconds, end: resolvedEnd, duration: duration)
     }
     
     private func clampTrimValues() {
@@ -254,6 +256,15 @@ struct SampleDetailView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     Text("Trim for Preview / Transfer")
                         .font(.headline)
+
+                    WaveformTrimView(
+                        url: sample.url,
+                        duration: sample.duration,
+                        trimStart: $trimStartSeconds,
+                        trimEnd: $trimEndSeconds,
+                        playhead: isPlaying ? audioPreview.currentTime : nil,
+                        maxSelectionSeconds: 30.0
+                    )
 
                     HStack(spacing: 16) {
                         VStack(alignment: .leading, spacing: 4) {
@@ -770,6 +781,18 @@ struct SampleDetailView: View {
                     throw TransferError.digitaktNotFound
                 }
 
+                if let duration = sample.duration {
+                    let trimmedDuration = max(0.0, trimEndSeconds - trimStartSeconds)
+                    let effectiveDuration = trimmedDuration > 0.0 ? trimmedDuration : duration
+                    if effectiveDuration > 30.0 {
+                        await MainActor.run {
+                            isTransferring = false
+                            showLongSampleAlert(duration: effectiveDuration, limit: 30.0)
+                        }
+                        return
+                    }
+                }
+
                 let trimRange = SampleTrimExporter.clampedRange(
                     start: trimStartSeconds,
                     end: trimEndSeconds,
@@ -992,6 +1015,20 @@ struct SampleDetailView: View {
         Make sure your Digitakt is connected and has enough storage space.
         """
         presentLongTextAlert(title: "Transfer Failed", text: details)
+    }
+
+    private func showLongSampleAlert(duration: Double, limit: Double) {
+        let alert = NSAlert()
+        alert.messageText = "Sample Too Long"
+        alert.informativeText = """
+        This sample is \(String(format: "%.1f", duration))s long.
+        Digitakt transfers are limited to \(Int(limit))s.
+
+        Trim the sample to \(Int(limit))s or less and try again.
+        """
+        alert.alertStyle = .warning
+        alert.addButton(withTitle: "OK")
+        presentAlert(alert)
     }
 
     private func showTransferExistingAlert(fileName: String) {

@@ -17,6 +17,8 @@ struct RandomSampleView: View {
     @State private var musicalKey: String = ""
     @State private var bpm: String = ""
     @State private var feel: String = ""
+    @State private var trimStartSeconds: Double = 0
+    @State private var trimEndSeconds: Double = 0
     
     @ObservedObject private var audioPreview = AudioPreviewManager.shared
     @EnvironmentObject var appState: AppState
@@ -26,6 +28,12 @@ struct RandomSampleView: View {
     private var isPlaying: Bool {
         guard let sample = currentSample else { return false }
         return audioPreview.isPlaying(url: sample.url)
+    }
+
+    private var effectiveTrimRange: SampleTrimExporter.TrimRange? {
+        guard let sample = currentSample, let duration = sample.duration else { return nil }
+        let resolvedEnd = trimEndSeconds <= 0 ? duration : trimEndSeconds
+        return SampleTrimExporter.clampedRange(start: trimStartSeconds, end: resolvedEnd, duration: duration)
     }
     
     var body: some View {
@@ -92,7 +100,11 @@ struct RandomSampleView: View {
                                     if isPlaying {
                                         audioPreview.stop()
                                     } else {
-                                        audioPreview.play(url: sample.url)
+                                        if let range = effectiveTrimRange {
+                                            audioPreview.play(url: sample.url, start: range.start, end: range.end)
+                                        } else {
+                                            audioPreview.play(url: sample.url)
+                                        }
                                     }
                                 }) {
                                     HStack {
@@ -127,6 +139,54 @@ struct RandomSampleView: View {
                                 .buttonStyle(.plain)
                             }
                             
+                            Divider()
+
+                            VStack(alignment: .leading, spacing: 12) {
+                                Text("Trim for Preview / Transfer")
+                                    .font(.headline)
+
+                                WaveformTrimView(
+                                    url: sample.url,
+                                    duration: sample.duration,
+                                    trimStart: $trimStartSeconds,
+                                    trimEnd: $trimEndSeconds,
+                                    playhead: isPlaying ? audioPreview.currentTime : nil,
+                                    maxSelectionSeconds: 30.0
+                                )
+
+                                HStack(spacing: 12) {
+                                    Button("Apply 3s Padding") {
+                                        if let range = SampleTrimExporter.defaultRange(duration: sample.duration) {
+                                            trimStartSeconds = range.start
+                                            trimEndSeconds = range.end
+                                        }
+                                        clampTrimValues()
+                                    }
+                                    .buttonStyle(.bordered)
+
+                                    Button("Save Trim") {
+                                        clampTrimValues()
+                                        saveTrim()
+                                    }
+                                    .buttonStyle(.borderedProminent)
+
+                                    Button("Clear") {
+                                        trimStartSeconds = 0
+                                        trimEndSeconds = sample.duration ?? 0
+                                        clampTrimValues()
+                                        clearTrim()
+                                    }
+                                    .buttonStyle(.bordered)
+                                }
+
+                                Text("Preview uses these endpoints. Transfer uses trimmed export if range is set.")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                            .padding()
+                            .background(Color(NSColor.controlBackgroundColor))
+                            .cornerRadius(12)
+
                             Divider()
                             
                             // Notes Section
@@ -371,6 +431,7 @@ struct RandomSampleView: View {
 
         // Load existing notes if available
         loadNotes()
+        loadTrimState()
 
         print("🎲 Selected random sample: \(newSample.name)")
     }
@@ -391,6 +452,24 @@ struct RandomSampleView: View {
             bpm = ""
             feel = ""
         }
+    }
+
+    private func loadTrimState() {
+        guard let sample = currentSample else { return }
+
+        if let metadata = try? MetadataManager.loadMetadata(forFileURL: sample.url),
+           let start = metadata.trimStartSeconds,
+           let end = metadata.trimEndSeconds {
+            trimStartSeconds = start
+            trimEndSeconds = end
+        } else if let range = SampleTrimExporter.defaultRange(duration: sample.duration) {
+            trimStartSeconds = range.start
+            trimEndSeconds = range.end
+        } else {
+            trimStartSeconds = 0
+            trimEndSeconds = sample.duration ?? 0
+        }
+        clampTrimValues()
     }
 
     private func saveNotes() {
@@ -423,6 +502,52 @@ struct RandomSampleView: View {
         }
     }
 
+    private func saveTrim() {
+        guard let sample = currentSample else { return }
+
+        var metadata = (try? MetadataManager.loadMetadata(forFileURL: sample.url)) ?? ProjectMetadata(
+            fileURL: sample.url,
+            projectName: sample.name
+        )
+
+        metadata.trimStartSeconds = trimStartSeconds
+        metadata.trimEndSeconds = trimEndSeconds
+        metadata.touch()
+
+        do {
+            try MetadataManager.saveMetadata(metadata)
+            appState.metadataCache[metadata.id] = metadata
+        } catch {
+            print("❌ Failed to save trim: \(error)")
+        }
+    }
+
+    private func clearTrim() {
+        guard let sample = currentSample else { return }
+
+        var metadata = (try? MetadataManager.loadMetadata(forFileURL: sample.url)) ?? ProjectMetadata(
+            fileURL: sample.url,
+            projectName: sample.name
+        )
+
+        metadata.trimStartSeconds = nil
+        metadata.trimEndSeconds = nil
+        metadata.touch()
+
+        do {
+            try MetadataManager.saveMetadata(metadata)
+            appState.metadataCache[metadata.id] = metadata
+        } catch {
+            print("❌ Failed to clear trim: \(error)")
+        }
+    }
+
+    private func clampTrimValues() {
+        guard let duration = currentSample?.duration else { return }
+        trimStartSeconds = max(0, min(trimStartSeconds, duration))
+        trimEndSeconds = max(trimStartSeconds, min(trimEndSeconds, duration))
+    }
+
 	private func transferToDigitakt(sample: SampleFile) {
 		guard !isTransferringToDigitakt else { return }
 		isTransferringToDigitakt = true
@@ -433,7 +558,8 @@ struct RandomSampleView: View {
 			print("🎹 Transfer to Digitakt: \(sampleName)")
 			print("📁 Sample path: \(sampleURL.path)")
 
-			let metadata = sample.metadataID.flatMap { appState.metadataCache[$0] }
+			let metadata = (try? MetadataManager.loadMetadata(forFileURL: sample.url))
+                ?? sample.metadataID.flatMap { appState.metadataCache[$0] }
 			let trimRange = SampleTrimExporter.range(from: metadata, duration: sample.duration)
 			let fadeOutSeconds = metadata?.fadeOutSeconds
 			let fadeInEnabled = metadata?.fadeInEnabled ?? false
@@ -463,6 +589,31 @@ struct RandomSampleView: View {
 
 					guard let deviceID = try ElektroidCLI.shared.resolveDigitaktDeviceID(preferred: "1") else {
 						throw TransferError.digitaktNotFound
+					}
+
+					if let duration = sample.duration {
+						let effectiveDuration: Double
+						if let range = trimRange {
+							effectiveDuration = max(0.0, range.end - range.start)
+						} else {
+							effectiveDuration = duration
+						}
+						if effectiveDuration > 30.0 {
+							DispatchQueue.main.sync {
+								let alert = NSAlert()
+								alert.messageText = "Sample Too Long"
+								alert.informativeText = """
+								This sample is \(String(format: "%.1f", effectiveDuration))s long.
+								Digitakt transfers are limited to 30s.
+
+								Trim the sample to 30s or less and try again.
+								"""
+								alert.alertStyle = .warning
+								alert.addButton(withTitle: "OK")
+								alert.runModal()
+							}
+							return
+						}
 					}
 					let (uploadURL, cleanup) = try SampleTrimExporter.exportTrimmedIfNeeded(
 						url: sampleURL,
