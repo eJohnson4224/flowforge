@@ -7,6 +7,7 @@ This is a quick navigation map for the repository.
 - `BLOWBORG/flowforge/` — Xcode project source root
 - `BLOWBORG/flowforge.xcodeproj/` — Xcode project settings
 - `Projects/` — user project assets (local workspace content)
+- `SECOND_BRAIN/` — development operating system + AI context resources
 - `misc/` — miscellaneous assets/notes
 - `COMPLETED_ROADMAP/` — archived roadmap phases
 
@@ -14,6 +15,8 @@ This is a quick navigation map for the repository.
 
 - `README.md` — primary project overview
 - `ROADMAP.md` — living product roadmap and phase planning
+- `SECOND_BRAIN/README.md` — second-brain operating framework
+- `SECOND_BRAIN/CONTEXT_DIGITAKT_OBJECT_MODEL.md` — Digitakt conceptual memory/object model
 - `QUICKSTART.md` — setup/getting started steps
 - `TROUBLESHOOTING.md` — known issues and fixes
 - `XCODE_SETUP_CHECKLIST.md` — Xcode setup checklist

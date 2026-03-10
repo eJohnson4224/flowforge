@@ -477,6 +477,20 @@ Two viable approaches:
 - One-click “resurface” action from Archive to Active
 - A “Flow mode” that encourages serendipity (RandomSampleView as seed)
 
+### Second-brain context resources
+
+To keep AI sessions aligned and reduce context drift, use:
+
+- `SECOND_BRAIN/README.md` for execution workflow
+- `SECOND_BRAIN/NOW.md` for active phase priorities
+- `SECOND_BRAIN/FILE_MANAGEMENT_WORKFLOW.md` for move/scan reliability
+- `SECOND_BRAIN/CONTEXT_DIGITAKT_OBJECT_MODEL.md` for Digitakt memory/object model reasoning
+
+Current Elektron focus in Phase S:
+
+- Harden sample transfer to `/samples/SKETCHS`
+- Do not make sample-to-sound conversion a phase requirement
+
 ---
 
 ## Mac App Store sandboxing (final phase; not yet)
