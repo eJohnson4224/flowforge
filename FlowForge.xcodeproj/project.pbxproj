@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1BUNDLECLI00000001 /* FlowForge/elektroid-cli in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEF1E2D3C4B5A69788 /* FlowForge/elektroid-cli */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEFLAC000001 /* FlowForge/libFLAC.14.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEFLACREF0001 /* FlowForge/libFLAC.14.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGLIB000000001 /* FlowForge/libglib-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBREF0001 /* FlowForge/libglib-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGLIBGIO0000001 /* FlowForge/libgio-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBGIOREF1 /* FlowForge/libgio-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGLIBGOBJ00001 /* FlowForge/libgobject-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGLIBGOBJREF1 /* FlowForge/libgobject-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEGMODULE0001 /* FlowForge/libgmodule-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEGMODULEREF1 /* FlowForge/libgmodule-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEINTL000000001 /* FlowForge/libintl.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEINTLREF0001 /* FlowForge/libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEJSONGLIB000001 /* FlowForge/libjson-glib-1.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEJSONGLIBREF1 /* FlowForge/libjson-glib-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLELZMA0001 /* FlowForge/liblzma.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLELZMAREF0001 /* FlowForge/liblzma.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEMP3LAME01 /* FlowForge/libmp3lame.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEMP3LAMEREF1 /* FlowForge/libmp3lame.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEMPG123001 /* FlowForge/libmpg123.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEMPG123REF1 /* FlowForge/libmpg123.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEOGG000001 /* FlowForge/libogg.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEOGGREF0001 /* FlowForge/libogg.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEOPUS0001 /* FlowForge/libopus.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEOPUSREF0001 /* FlowForge/libopus.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEPCRE20001 /* FlowForge/libpcre2-8.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEPCRE2REF01 /* FlowForge/libpcre2-8.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLERTAUDIO00001 /* FlowForge/librtaudio.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLERTAUDIOREF01 /* FlowForge/librtaudio.7.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLERTMIDI00000001 /* FlowForge/librtmidi.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLERTMIDIREF0001 /* FlowForge/librtmidi.7.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLESAMPLERATE1 /* FlowForge/libsamplerate.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLESAMPLERATEREF1 /* FlowForge/libsamplerate.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLESNDFILE0001 /* FlowForge/libsndfile.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLESNDFILEREF1 /* FlowForge/libsndfile.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEVORBIS0001 /* FlowForge/libvorbis.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEVORBISREF1 /* FlowForge/libvorbis.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEVORBISENC1 /* FlowForge/libvorbisenc.2.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEVORBISENCREF1 /* FlowForge/libvorbisenc.2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEZIP0000000001 /* FlowForge/libzip.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEZIPREF000001 /* FlowForge/libzip.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E1BUNDLEZSTD0001 /* FlowForge/libzstd.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1BUNDLEZSTDREF0001 /* FlowForge/libzstd.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1BUNDLECOPY0000001 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				E1BUNDLECLI00000001 /* FlowForge/elektroid-cli in CopyFiles */,
+				E1BUNDLERTMIDI00000001 /* FlowForge/librtmidi.7.dylib in CopyFiles */,
+				E1BUNDLEJSONGLIB000001 /* FlowForge/libjson-glib-1.0.0.dylib in CopyFiles */,
+				E1BUNDLEGLIBGIO0000001 /* FlowForge/libgio-2.0.0.dylib in CopyFiles */,
+				E1BUNDLEGLIBGOBJ00001 /* FlowForge/libgobject-2.0.0.dylib in CopyFiles */,
+				E1BUNDLEGLIB000000001 /* FlowForge/libglib-2.0.0.dylib in CopyFiles */,
+				E1BUNDLEINTL000000001 /* FlowForge/libintl.8.dylib in CopyFiles */,
+				E1BUNDLEZIP0000000001 /* FlowForge/libzip.5.dylib in CopyFiles */,
+				E1BUNDLERTAUDIO00001 /* FlowForge/librtaudio.7.dylib in CopyFiles */,
+				E1BUNDLESNDFILE0001 /* FlowForge/libsndfile.1.dylib in CopyFiles */,
+				E1BUNDLESAMPLERATE1 /* FlowForge/libsamplerate.0.dylib in CopyFiles */,
+				E1BUNDLEFLAC000001 /* FlowForge/libFLAC.14.dylib in CopyFiles */,
+				E1BUNDLEGMODULE0001 /* FlowForge/libgmodule-2.0.0.dylib in CopyFiles */,
+				E1BUNDLEPCRE20001 /* FlowForge/libpcre2-8.0.dylib in CopyFiles */,
+				E1BUNDLEOGG000001 /* FlowForge/libogg.0.dylib in CopyFiles */,
+				E1BUNDLEVORBIS0001 /* FlowForge/libvorbis.0.dylib in CopyFiles */,
+				E1BUNDLEVORBISENC1 /* FlowForge/libvorbisenc.2.dylib in CopyFiles */,
+				E1BUNDLEOPUS0001 /* FlowForge/libopus.0.dylib in CopyFiles */,
+				E1BUNDLEMPG123001 /* FlowForge/libmpg123.0.dylib in CopyFiles */,
+				E1BUNDLEMP3LAME01 /* FlowForge/libmp3lame.0.dylib in CopyFiles */,
+				E1BUNDLELZMA0001 /* FlowForge/liblzma.5.dylib in CopyFiles */,
+				E1BUNDLEZSTD0001 /* FlowForge/libzstd.1.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C13DB4A02F0B08BD00CC45A7 /* FlowForge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowForge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BUNDLEF1E2D3C4B5A69788 /* FlowForge/elektroid-cli */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "FlowForge/elektroid-cli"; sourceTree = "<group>"; };
+		E1BUNDLEFLACREF0001 /* FlowForge/libFLAC.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libFLAC.14.dylib; sourceTree = "<group>"; };
+		E1BUNDLEGLIBGIOREF1 /* FlowForge/libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "FlowForge/libgio-2.0.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLEGLIBGOBJREF1 /* FlowForge/libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "FlowForge/libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLEGLIBREF0001 /* FlowForge/libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "FlowForge/libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLEGMODULEREF1 /* FlowForge/libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "FlowForge/libgmodule-2.0.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLEINTLREF0001 /* FlowForge/libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libintl.8.dylib; sourceTree = "<group>"; };
+		E1BUNDLEJSONGLIBREF1 /* FlowForge/libjson-glib-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "FlowForge/libjson-glib-1.0.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLELZMAREF0001 /* FlowForge/liblzma.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/liblzma.5.dylib; sourceTree = "<group>"; };
+		E1BUNDLEMP3LAMEREF1 /* FlowForge/libmp3lame.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libmp3lame.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEMPG123REF1 /* FlowForge/libmpg123.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libmpg123.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEOGGREF0001 /* FlowForge/libogg.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libogg.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEOPUSREF0001 /* FlowForge/libopus.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libopus.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEPCRE2REF01 /* FlowForge/libpcre2-8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "FlowForge/libpcre2-8.0.dylib"; sourceTree = "<group>"; };
+		E1BUNDLERTAUDIOREF01 /* FlowForge/librtaudio.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/librtaudio.7.dylib; sourceTree = "<group>"; };
+		E1BUNDLERTMIDIREF0001 /* FlowForge/librtmidi.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/librtmidi.7.dylib; sourceTree = "<group>"; };
+		E1BUNDLESAMPLERATEREF1 /* FlowForge/libsamplerate.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libsamplerate.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLESNDFILEREF1 /* FlowForge/libsndfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libsndfile.1.dylib; sourceTree = "<group>"; };
+		E1BUNDLEVORBISENCREF1 /* FlowForge/libvorbisenc.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libvorbisenc.2.dylib; sourceTree = "<group>"; };
+		E1BUNDLEVORBISREF1 /* FlowForge/libvorbis.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libvorbis.0.dylib; sourceTree = "<group>"; };
+		E1BUNDLEZIPREF000001 /* FlowForge/libzip.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libzip.5.dylib; sourceTree = "<group>"; };
+		E1BUNDLEZSTDREF0001 /* FlowForge/libzstd.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FlowForge/libzstd.1.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C13DB4A22F0B08BD00CC45A7 /* FlowForge */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FlowForge;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C13DB49D2F0B08BD00CC45A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C13DB4972F0B08BD00CC45A7 = {
+			isa = PBXGroup;
+			children = (
+				C13DB4A22F0B08BD00CC45A7 /* FlowForge */,
+				C13DB4A12F0B08BD00CC45A7 /* Products */,
+				C1A38C582F345E2900831747 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		C13DB4A12F0B08BD00CC45A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C13DB4A02F0B08BD00CC45A7 /* FlowForge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1A38C582F345E2900831747 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				E1BUNDLEF1E2D3C4B5A69788 /* FlowForge/elektroid-cli */,
+				E1BUNDLERTMIDIREF0001 /* FlowForge/librtmidi.7.dylib */,
+				E1BUNDLEJSONGLIBREF1 /* FlowForge/libjson-glib-1.0.0.dylib */,
+				E1BUNDLEGLIBGIOREF1 /* FlowForge/libgio-2.0.0.dylib */,
+				E1BUNDLEGLIBGOBJREF1 /* FlowForge/libgobject-2.0.0.dylib */,
+				E1BUNDLEGLIBREF0001 /* FlowForge/libglib-2.0.0.dylib */,
+				E1BUNDLEINTLREF0001 /* FlowForge/libintl.8.dylib */,
+				E1BUNDLEZIPREF000001 /* FlowForge/libzip.5.dylib */,
+				E1BUNDLERTAUDIOREF01 /* FlowForge/librtaudio.7.dylib */,
+				E1BUNDLESNDFILEREF1 /* FlowForge/libsndfile.1.dylib */,
+				E1BUNDLESAMPLERATEREF1 /* FlowForge/libsamplerate.0.dylib */,
+				E1BUNDLEFLACREF0001 /* FlowForge/libFLAC.14.dylib */,
+				E1BUNDLEGMODULEREF1 /* FlowForge/libgmodule-2.0.0.dylib */,
+				E1BUNDLEPCRE2REF01 /* FlowForge/libpcre2-8.0.dylib */,
+				E1BUNDLEOGGREF0001 /* FlowForge/libogg.0.dylib */,
+				E1BUNDLEVORBISREF1 /* FlowForge/libvorbis.0.dylib */,
+				E1BUNDLEVORBISENCREF1 /* FlowForge/libvorbisenc.2.dylib */,
+				E1BUNDLEOPUSREF0001 /* FlowForge/libopus.0.dylib */,
+				E1BUNDLEMPG123REF1 /* FlowForge/libmpg123.0.dylib */,
+				E1BUNDLEMP3LAMEREF1 /* FlowForge/libmp3lame.0.dylib */,
+				E1BUNDLELZMAREF0001 /* FlowForge/liblzma.5.dylib */,
+				E1BUNDLEZSTDREF0001 /* FlowForge/libzstd.1.dylib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C13DB49F2F0B08BD00CC45A7 /* FlowForge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C13DB4AD2F0B08BE00CC45A7 /* Build configuration list for PBXNativeTarget "FlowForge" */;
+			buildPhases = (
+				C13DB49C2F0B08BD00CC45A7 /* Sources */,
+				C13DB49D2F0B08BD00CC45A7 /* Frameworks */,
+				E1BUNDLECOPY0000001 /* CopyFiles */,
+				C13DB49E2F0B08BD00CC45A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C13DB4A22F0B08BD00CC45A7 /* FlowForge */,
+			);
+			name = FlowForge;
+			packageProductDependencies = (
+			);
+			productName = FlowForge;
+			productReference = C13DB4A02F0B08BD00CC45A7 /* FlowForge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C13DB4982F0B08BD00CC45A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					C13DB49F2F0B08BD00CC45A7 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = C13DB49B2F0B08BD00CC45A7 /* Build configuration list for PBXProject "FlowForge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C13DB4972F0B08BD00CC45A7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C13DB4A12F0B08BD00CC45A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C13DB49F2F0B08BD00CC45A7 /* FlowForge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C13DB49E2F0B08BD00CC45A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C13DB49C2F0B08BD00CC45A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C13DB4AB2F0B08BE00CC45A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C13DB4AC2F0B08BE00CC45A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C13DB4AE2F0B08BE00CC45A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowForge/FlowForge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A74MR47VX;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlowForge",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elijah-Johnson.flowforge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = Nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		C13DB4AF2F0B08BE00CC45A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowForge/FlowForge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A74MR47VX;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlowForge",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elijah-Johnson.flowforge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = Nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C13DB49B2F0B08BD00CC45A7 /* Build configuration list for PBXProject "FlowForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C13DB4AB2F0B08BE00CC45A7 /* Debug */,
+				C13DB4AC2F0B08BE00CC45A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C13DB4AD2F0B08BE00CC45A7 /* Build configuration list for PBXNativeTarget "FlowForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C13DB4AE2F0B08BE00CC45A7 /* Debug */,
+				C13DB4AF2F0B08BE00CC45A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C13DB4982F0B08BD00CC45A7 /* Project object */;
+}

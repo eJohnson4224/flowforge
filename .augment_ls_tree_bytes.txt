@@ -1,5 +1,0 @@
---- git ls-tree HEAD | wc -c
-       0
---- first 200 bytes hex
---- same but force no pager & no color
-       0

@@ -1,6 +1,0 @@
-### elektroid-cli -a ld
-elektroid-cli: illegal option -- a
-elektroid 3.3
-Usage: elektroid-cli [options] command
-
-exit_code=0

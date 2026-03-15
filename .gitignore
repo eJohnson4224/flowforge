@@ -91,3 +91,11 @@ iOSInjectionProject/
 
 # macOS
 .DS_Store
+.obsidian/
+.vscode/
+
+# Local Codex/Augment diagnostic artifacts
+.augment_*
+
+# Nested git backup artifacts
+.git.backup/

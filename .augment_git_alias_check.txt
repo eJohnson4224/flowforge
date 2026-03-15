@@ -1,5 +1,0 @@
---- repo aliases
---- global aliases
---- system aliases
---- git version
-git version 2.39.5 (Apple Git-154)

@@ -23,7 +23,7 @@
 - 🎯 Undo/redo for file operations
 - 🎯 Sample slicing (future phase)
 
-See [ROADMAP.md](ROADMAP.md) for the canonical plan. Historical gap analysis: [COMPLETED_ROADMAP/PHASE1_ANALYSIS.md](COMPLETED_ROADMAP/PHASE1_ANALYSIS.md).
+See [docs/roadmap.md](docs/roadmap.md) for the canonical plan. Historical gap analysis: [docs/archive/20260209-phase1-analysis.md](docs/archive/20260209-phase1-analysis.md).
 
 ---
 
@@ -167,7 +167,7 @@ Alternative names considered:
 
 **Result:** Solid foundation with working file management workflow
 
-See [ROADMAP.md](ROADMAP.md). Historical implementation notes: [COMPLETED_ROADMAP/PHASE1_IMPLEMENTATION.md](COMPLETED_ROADMAP/PHASE1_IMPLEMENTATION.md) and [COMPLETED_ROADMAP/PHASE1_ANALYSIS.md](COMPLETED_ROADMAP/PHASE1_ANALYSIS.md).
+See [docs/roadmap.md](docs/roadmap.md). Historical implementation notes: [docs/archive/20260209-phase1-implementation.md](docs/archive/20260209-phase1-implementation.md) and [docs/archive/20260209-phase1-analysis.md](docs/archive/20260209-phase1-analysis.md).
 
 ---
 
@@ -209,7 +209,7 @@ See [ROADMAP.md](ROADMAP.md). Historical implementation notes: [COMPLETED_ROADMA
 - [ ] Auto-refresh on external changes
 - [ ] Batch operations (multi-select)
 
-**Strategy:** Polish first, then add complexity. See [ROADMAP.md](ROADMAP.md) for rationale.
+**Strategy:** Polish first, then add complexity. See [docs/roadmap.md](docs/roadmap.md) for rationale.
 
 ---
 
@@ -291,7 +291,7 @@ See [ROADMAP.md](ROADMAP.md). Historical implementation notes: [COMPLETED_ROADMA
 ```
 FlowForge/
 ├── README.md                    # This file
-├── BRAINSTORM.md               # Ongoing ideas and experiments
+├── docs/active/brainstorm.md               # Ongoing ideas and experiments
 ├── FlowForge.xcodeproj/        # Xcode project (created via Xcode)
 ├── FlowForge/                  # Main app code
 │   ├── FlowForgeApp.swift      # App entry point

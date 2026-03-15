@@ -1,5 +1,0 @@
---- rev-parse --show-toplevel
-/Users/elij/Desktop/folders/Programming/getProj
---- rev-parse --git-dir
-/Users/elij/Desktop/folders/Programming/getProj/.git
---- core.worktree config (repo/local/global)
