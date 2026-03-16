@@ -1,5 +1,28 @@
 # File Management Workflow (Control Doc)
 
+## DOCUMENT_TYPE
+`control-reference`
+
+## AUTHORITY
+Canonical reference for file-management reliability rules, transitions, and verification criteria.
+Use this doc when work touches scan, move, conflict, or recovery behavior.
+
+## STATUS
+`active`
+
+## AI_CONTEXT_PRIORITY
+`5 when file-management work is in scope`
+
+## UPDATE_TRIGGER
+Update when scan, move, conflict, recovery, or verification behavior changes.
+
+## RELATED_DOCUMENTS
+- [../README.md](../README.md)
+- [../docs/roadmap.md](../docs/roadmap.md)
+- [README.md](README.md)
+- [now.md](now.md)
+- [../docs/active/test-sweep.md](../docs/active/test-sweep.md)
+
 This document governs how FlowForge scans, classifies, moves, and verifies files.
 
 ## Objective

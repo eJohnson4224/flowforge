@@ -1,6 +1,30 @@
 # Now: FlowForge Execution Queue
 
-Last updated: 2026-03-07
+## DOCUMENT_TYPE
+`active-queue`
+
+## AUTHORITY
+Canonical current execution priorities, WIP limits, and sprint outcomes.
+If this file conflicts with older planning text, this file wins for day-to-day execution.
+
+## STATUS
+`active-time-sensitive`
+
+## AI_CONTEXT_PRIORITY
+`3`
+
+## UPDATE_TRIGGER
+Update when priorities, WIP limits, blockers, or sprint outcomes change.
+
+## RELATED_DOCUMENTS
+- [../README.md](../README.md)
+- [../docs/roadmap.md](../docs/roadmap.md)
+- [README.md](README.md)
+- [decisions.md](decisions.md)
+- [file-management-workflow.md](file-management-workflow.md)
+- [../docs/active/test-sweep.md](../docs/active/test-sweep.md)
+
+Last updated: 2026-03-15
 
 ## Current sprint outcomes
 

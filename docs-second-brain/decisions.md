@@ -1,5 +1,27 @@
 # Decisions (ADR-lite)
 
+## DOCUMENT_TYPE
+`decision-log`
+
+## AUTHORITY
+Canonical durable decisions record.
+Settled decisions here remain authoritative until explicitly superseded by a newer decision entry or a current canonical doc.
+
+## STATUS
+`active`
+
+## AI_CONTEXT_PRIORITY
+`4`
+
+## UPDATE_TRIGGER
+Update when a durable product, architecture, workflow, or tool decision is made, reversed, or superseded.
+
+## RELATED_DOCUMENTS
+- [../README.md](../README.md)
+- [../docs/roadmap.md](../docs/roadmap.md)
+- [README.md](README.md)
+- [now.md](now.md)
+
 Record durable choices so future AI sessions do not re-open settled fundamentals.
 
 ## Template

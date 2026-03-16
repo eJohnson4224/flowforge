@@ -1,5 +1,30 @@
 # FlowForge Second Brain
 
+## DOCUMENT_TYPE
+`execution-system`
+
+## AUTHORITY
+Canonical execution workflow for active development.
+This file defines how work is captured, triaged, and handed to AI once strategy is set in `docs/roadmap.md`.
+
+## STATUS
+`active`
+
+## AI_CONTEXT_PRIORITY
+`2`
+
+## UPDATE_TRIGGER
+Update when execution workflow, second-brain structure, or AI handoff rules change.
+
+## RELATED_DOCUMENTS
+- [../README.md](../README.md)
+- [../docs/roadmap.md](../docs/roadmap.md)
+- [now.md](now.md)
+- [decisions.md](decisions.md)
+- [file-management-workflow.md](file-management-workflow.md)
+- [context-digitakt-object-model.md](context-digitakt-object-model.md)
+- [../docs/active/test-sweep.md](../docs/active/test-sweep.md)
+
 This folder is the operating system for product decisions, development flow, and AI collaboration.
 
 ## Why this exists
@@ -13,10 +38,10 @@ This folder is the operating system for product decisions, development flow, and
 - `inbox.md`: raw capture for ideas, friction, and bugs.
 - `now.md`: active queue, current sprint focus, and WIP limits.
 - `questions.md`: inquiry prompts that guide product decisions.
-- `docs-second-brain/experiments.md`: flow-state hypotheses and outcomes.
+- `experiments.md`: flow-state hypotheses and outcomes.
 - `decisions.md`: durable decisions and tradeoffs (ADR-lite).
-- `docs-second-brain/navigation-map.md`: explicit user journeys and navigation debt.
-- `docs-second-brain/file-management-workflow.md`: reliability control doc for scan/move/conflict/recovery.
+- `navigation-map.md`: explicit user journeys and navigation debt.
+- `file-management-workflow.md`: reliability control doc for scan/move/conflict/recovery.
 - `context-digitakt-object-model.md`: canonical Digitakt memory/object model for Elektron tooling.
 
 ## Operating loop
@@ -25,7 +50,7 @@ This folder is the operating system for product decisions, development flow, and
 2. Triage daily:
    - if executable now -> move to `now.md`
    - if needs discovery -> move to `questions.md`
-   - if measurable bet -> move to `docs-second-brain/experiments.md`
+   - if measurable bet -> move to `experiments.md`
    - if resolved direction -> log in `decisions.md`
 3. Build from `now.md` only (protect focus).
 4. At PR/commit gates, update `docs/roadmap.md` if strategy changed.
@@ -35,15 +60,19 @@ This folder is the operating system for product decisions, development flow, and
 
 Before asking AI for implementation work, pass a compact context pack:
 
-1. `docs/roadmap.md` (strategic phase + acceptance criteria)
-2. `docs-second-brain/now.md` (active priorities)
-3. 1-3 relevant source files (service/view/model)
-4. `docs/active/test-sweep.md` if behavior changes
+1. `README.md` (canonical router + load order)
+2. `docs/roadmap.md` (strategic phase + acceptance criteria)
+3. `docs-second-brain/now.md` (active priorities)
+4. the relevant canonical reference doc if the task touches a specialized domain
+5. 1-3 relevant source files (service/view/model)
+6. `docs/active/test-sweep.md` if behavior changes
 
 Prompt framing pattern:
 
 - `Goal`: the user outcome in one sentence.
 - `Constraint`: architecture invariant(s) to preserve.
+- `Canonical docs`: which sources of truth govern this change.
+- `Environment`: the environment assumptions to preserve.
 - `Done`: concrete acceptance checks.
 
 ## File-management focus lane

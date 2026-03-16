@@ -1,5 +1,28 @@
 # ELEKTRON DIGITAKT — CODEX-OPTIMIZED MEMORY / OBJECT MODEL
 
+## DOCUMENT_TYPE
+`domain-reference`
+
+## AUTHORITY
+Canonical conceptual model for Digitakt storage, pool, browser, and sound/sample relationships used in FlowForge reasoning.
+This is a product/domain reference, not a roadmap or execution queue.
+
+## STATUS
+`active-reference`
+
+## AI_CONTEXT_PRIORITY
+`5 when Digitakt transfer or object-model reasoning is in scope`
+
+## UPDATE_TRIGGER
+Update when product assumptions about Digitakt object relationships or transfer reasoning change.
+
+## RELATED_DOCUMENTS
+- [../README.md](../README.md)
+- [../docs/roadmap.md](../docs/roadmap.md)
+- [README.md](README.md)
+- [now.md](now.md)
+- [../docs/active/test-sweep.md](../docs/active/test-sweep.md)
+
 ## PURPOSE
 
 Represent the Digitakt as a structured system:

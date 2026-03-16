@@ -1,5 +1,28 @@
 # Proof Test Sweep (P0 + Edge Cases)
 
+## DOCUMENT_TYPE
+`verification-gate`
+
+## AUTHORITY
+Canonical manual proof sweep for behavior-changing work that affects transfer or state-critical workflows.
+Use this as the verification gate, not as the source of product strategy.
+
+## STATUS
+`active`
+
+## AI_CONTEXT_PRIORITY
+`6 when behavior changes or before commit gates`
+
+## UPDATE_TRIGGER
+Update when transfer behavior, edge cases, or commit-gate expectations change.
+
+## RELATED_DOCUMENTS
+- [../../README.md](../../README.md)
+- [../roadmap.md](../roadmap.md)
+- [../../docs-second-brain/README.md](../../docs-second-brain/README.md)
+- [../../docs-second-brain/now.md](../../docs-second-brain/now.md)
+- [../../docs-second-brain/file-management-workflow.md](../../docs-second-brain/file-management-workflow.md)
+
 ## When to run
 
 - After significant code changes that would justify a git commit
@@ -8,7 +31,7 @@
 ## Required setup
 
 - Digitakt connected via USB, USB config set to Audio/MIDI
-- FlowForge built with bundled `elektroid-cli`
+- FlowForge built with access to a working `elektroid-cli` path (bundled or selected in Settings)
 
 ## P0 tests (commit gate)
 

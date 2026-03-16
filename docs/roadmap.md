@@ -1,5 +1,27 @@
 # FlowForge Roadmap (living document)
 
+## DOCUMENT_TYPE
+`strategic-roadmap`
+
+## AUTHORITY
+Canonical strategic truth for current product direction, phase ordering, architecture invariants, and documentation topology.
+
+## STATUS
+`active`
+
+## AI_CONTEXT_PRIORITY
+`1`
+
+## UPDATE_TRIGGER
+Update when strategy, phase boundaries, canonical doc authority, or environment assumptions change.
+
+## RELATED_DOCUMENTS
+- [../README.md](../README.md)
+- [../docs-second-brain/README.md](../docs-second-brain/README.md)
+- [../docs-second-brain/now.md](../docs-second-brain/now.md)
+- [../docs-second-brain/decisions.md](../docs-second-brain/decisions.md)
+- [active/test-sweep.md](active/test-sweep.md)
+
 ## Abstract
 
 FlowForge is a macOS-native, folder-backed workflow tool for managing music-making work across three creative states:
@@ -440,6 +462,51 @@ Two viable approaches:
   - Archive/restore ergonomics
 
 ---
+
+## Next steps (documentation + AI canonicalization)
+
+These follow-ups reflect the repo-organization improvements introduced by the recent documentation-focused merge and should be treated as near-term organizational work alongside product work.
+
+### Documentation follow-up (suggested)
+
+1. Keep root `README.md` as a short router that directs humans and AI agents to the canonical entry points.
+   - In the current repo shape, that means routing to `docs/roadmap.md` for strategy and `docs-second-brain/README.md` plus `docs-second-brain/now.md` for execution.
+2. Preserve one explicit documentation model for day-to-day execution.
+   - Current canonical split is `docs/roadmap.md` = strategic truth, `docs-second-brain/` = execution truth, `docs/reference/` = durable supporting reference, and `docs/archive/` = historical context only.
+3. Consolidate product-overview content into the current canonical reference docs.
+   - Use `docs/reference/` for app purpose, workflow model, environment specs, and architecture invariants instead of restating them across multiple top-level files.
+4. De-duplicate or retire overlapping high-level reference docs to reduce ambiguity for both humans and AI agents.
+   - Each surviving high-level doc should explicitly declare whether it is strategy, execution, reference, or archive.
+5. Decide whether `docs/roadmap.md` should remain an overarching strategic plan or be refactored into a stricter prioritized active/backlog list.
+   - If `docs/roadmap.md` stays strategic, keep `docs-second-brain/now.md` as the active execution queue. If it becomes operational, reduce duplication by moving sprint-level execution detail out of `docs-second-brain/`.
+
+### AI canonical-context guardrails
+
+To keep AI work canonically aligned with the organizational model and environment assumptions, establish the following rules:
+
+- Use a fixed context precedence for AI work:
+  1. `docs/roadmap.md` for strategic truth
+  2. `docs-second-brain/README.md` for execution workflow
+  3. `docs-second-brain/now.md` for current priorities
+  4. one canonical environment + architecture reference doc
+  5. `docs/active/test-sweep.md` when behavior changes
+  6. the specific source files being edited
+- Create one canonical home for environment specifications instead of scattering them across `README.md` and `docs/roadmap.md`.
+  - Keep the baseline explicit: macOS-native Swift/SwiftUI app, file system as source of truth, Xcode/Swift/macOS target versions, sandboxing stance, and optional Elektroid CLI integration assumptions.
+- Add doc authority labels to each canonical top-level doc:
+  - `Purpose`
+  - `Authority`
+  - `Update trigger`
+  - `Status` (`active`, `reference`, or `archive`)
+- Treat `docs/archive/` as historical context only, not authority for current behavior.
+- Add a PR / commit-gate checklist item: if architecture, workflow, or environment assumptions changed, update the canonical docs in the same change.
+- Standardize the AI prompt/context pack to include:
+  - `Goal`
+  - `Constraint`
+  - `Canonical docs`
+  - `Environment`
+  - `Done`
+- When canonical docs conflict, AI should default to current strategic + execution docs and flag the ambiguity instead of merging old and new assumptions silently.
 
 ## Additional phases / context for AI to recreate FlowForge from this roadmap
 
